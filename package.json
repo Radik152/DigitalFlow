@@ -1,0 +1,35 @@
+{
+  "name": "digitalflow",
+  "version": "1.0.0",
+  "description": "savior19995@yandex.ru<Radik152>",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radik152/DigitalFlow.git"
+  },
+  "keywords": [
+    "digitalflow"
+  ],
+  "author": "Radik152",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radik152/DigitalFlow/issues"
+  },
+  "homepage": "https://github.com/Radik152/DigitalFlow#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "path": "^0.12.7",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
