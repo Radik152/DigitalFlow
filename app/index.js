@@ -1,1 +1,1 @@
-console.log('2');
+require('./style.css');
