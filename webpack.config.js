@@ -6,34 +6,34 @@ const webpack = require('webpack');
 module.exports = {
     mode: 'production',
     entry: './app/index.js',
-    devServer: {
-        historyApiFallback: true,
-        contentBase: path.resolve(__dirname, './dist'),
-        // open: true,
-        // compress: true,
-        // hot: true,
-        port: 8080,
-    },
+    // devServer: {
+    //     historyApiFallback: true,
+    //     contentBase: path.resolve(__dirname, './dist'),
+    //     open: true,
+    //     compress: true,
+    //     hot: true,
+    //     port: 8080,
+    // },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     module: {
         rules: [
-            {
-                test: /\.(gif|png|jpe?g|svg)$/i,
-                use: [
-                    'file-loader',
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                        bypassOnDebug: true, // webpack@1.x
-                        disable: true, // webpack@2.x and newer
-                        },
-                    },
-                ],
-            },
-            // { test: /\.svg$/, use: 'svg-inline-loader'},
+            // {
+            //     test: /\.(gif|png|jpe?g|svg)$/i,
+            //     use: [
+            //         'file-loader',
+            //         {
+            //             loader: 'image-webpack-loader',
+            //             options: {
+            //             bypassOnDebug: true, // webpack@1.x
+            //             disable: true, // webpack@2.x and newer
+            //             },
+            //         },
+            //     ],
+            // },
+            { test: /\.svg$/, use: 'svg-inline-loader'},
             { 
                 test: /\.css$/,
                 exclude: /node_modules/,
