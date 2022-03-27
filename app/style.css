@@ -544,6 +544,67 @@ h1 {
     margin-left: 20px;
 }
 
+.form-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 940px;
+}
+
+.form-container {
+    background-image: url('./assets/img/formBg.jpg');
+}
+
+.form-offers {
+    background: #000201;
+}
+
+.form-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-top: 180px;
+}
+
+.form-container-block {
+    padding-left: 250px;
+    width: 350px;
+}
+
+.form-container-title {
+    padding-bottom: 40px;
+}
+
+.form-offers-title {
+    padding-left: 130px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.form label {
+    margin-top: 40px
+}
+
+.form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    margin-top: 10px;
+    color: #FFFFFF;
+    outline: none;
+}
+
 .footer {
     background: #17181C;
     height: 550px;
