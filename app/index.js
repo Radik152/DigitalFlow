@@ -4,8 +4,14 @@ const burgerShowMenu = document.querySelector('.menuBurger-header');
 const menu = document.querySelector('.menu');
 const burgerHideMenu = document.querySelector('.button-hide-menu');
 const page = document.querySelector('.page');
-const dots = document.getElementsByClassName('dot-item');
+// const dots = document.getElementsByClassName('dot-item');
 const offerBlock = document.querySelector('.offer-list-container');
+
+const blockOffer_1 = document.getElementById('block-offer-1');
+const blockOffer_2 = document.getElementById('block-offer-2');
+const blockOffer_3 = document.getElementById('block-offer-3');
+
+let activeBlockOffer = 'block-offer-2';
 
 const offerItems = [
     {id: 1, class: "offer-high-level", title: "Высокий уровень исполнения "},
@@ -85,3 +91,24 @@ buildOfferItem(offerItemsLastRow[0]);
 buildDivWithButton();
 buildOfferItem(offerItemsLastRow[1]);
 buildEmptyDiv();
+
+blockOffer_1.onclick = function() {
+    activeBlockOffer = blockOffer_1.id;
+    blockOffer_1.classList.add('active-block-offer');
+    blockOffer_2.classList.remove('active-block-offer');
+    blockOffer_3.classList.remove('active-block-offer');
+}
+
+blockOffer_2.onclick = function() {
+    activeBlockOffer = blockOffer_2.id;
+    blockOffer_2.classList.add('active-block-offer');
+    blockOffer_1.classList.remove('active-block-offer');
+    blockOffer_3.classList.remove('active-block-offer');
+}
+
+blockOffer_3.onclick = function() {
+    activeBlockOffer = blockOffer_3.id;
+    blockOffer_3.classList.add('active-block-offer');
+    blockOffer_1.classList.remove('active-block-offer');
+    blockOffer_2.classList.remove('active-block-offer');
+}
